@@ -1,0 +1,11 @@
+--- origsrc/qt3d-opensource-src-5.9.3/src/3rdparty/assimp/assimp.pri	2017-11-10 07:02:21.000000000 -0600
++++ src/qt3d-opensource-src-5.9.3/src/3rdparty/assimp/assimp.pri	2017-12-11 01:30:48.386166400 -0600
+@@ -10,7 +10,7 @@ CONFIG -= precompile_header
+ 
+ win32:DEFINES+=_CRT_SECURE_NO_WARNINGS
+ 
+-qtConfig(system-zlib):!if(cross_compile:host_build): \
++qtConfig(system-zlib): \
+     QMAKE_USE_PRIVATE += zlib
+ else: \
+     QT_PRIVATE += zlib-private

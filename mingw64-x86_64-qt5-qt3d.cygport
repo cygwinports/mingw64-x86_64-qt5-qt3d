@@ -2,7 +2,7 @@ TOOLCHAIN_TARGET="x86_64-w64-mingw32"
 inherit toolchain qt5-qmake
 
 NAME="mingw64-x86_64-qt5-qt3d"
-VERSION=5.6.2
+VERSION=5.9.3
 RELEASE=1
 CATEGORY="Devel"
 SUMMARY="Qt C++ application framework for Win64 toolchain (3D API)"
@@ -15,8 +15,7 @@ HOMEPAGE="https://www.qt.io/"
 SRC_URI="http://download.qt.io/official_releases/qt/${VERSION%.*}/${VERSION}/submodules/qt3d-opensource-src-${VERSION}.tar.xz"
 SRC_DIR="qt3d-opensource-src-${VERSION}"
 PATCH_URI="
-	5.6.2-case-sensitivity.patch
-	5.6.2-system-zlib.patch
+	5.9-system-zlib.patch
 "
 
 # this is mostly cross-compiled, the native tools are only a small part
